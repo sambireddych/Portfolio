@@ -1,0 +1,190 @@
+body {
+    background-image: url(all.jpg)!important;
+    height: 100%;
+    width: 100%;
+    background-color: transparent!important;
+    background-position: -69% 45%;
+}
+h2 {
+    color:  yellow;
+    text-decoration: none;
+}
+.section-header {
+		color: #5b275e;
+		text-align: justify;
+		font-size: 20px;		
+}
+#past-section {
+			font-family: "Times New Roman", Times, serif;
+		font-style: italic;
+}
+#future-section{
+	
+		font-family: "Times New Roman", Times, serif;
+		font-style: italic;
+	}
+p {
+	color: darkblue;
+	font-size:20px;
+}
+.aside-header{
+	font-family: "Comic Sans MS";
+	font-style: italic;
+	color: #5b275e;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: darkblue;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+img{
+	border-radius: 75%;
+	width: 150px;
+}
+
+.pull-right{
+	float: right;
+
+}
+#contact-img{
+	border-radius: 75%;
+	width: 100px;
+}
+#wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+.div1{
+	float: left;
+    width: 33%;
+}
+.div2{
+	clear: both;
+    padding-top: 20px;
+}
+
+iframe {
+    margin: 20px 0px 0px 0px;
+    box-shadow: black 2px 2px 7px;
+    position: all;
+}
+
+.footer {
+background-color:white;
+text-align:center;
+font-family:Comic Sans MS;
+animation-duration: 4s;
+animation-name:footer1;
+}
+@keyframes footer1 {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+
+li a:hover {
+    background-color: red;
+}
+
+
+#section4{
+	 float: left;
+    width: 33%;
+}
+
+.contactheader {
+    margin: 0 auto;
+    padding: 2em;
+    text-align: center;
+}
+.contactheader h1 {
+    margin: 0;
+    color: hsla();
+    font-weight: 300;
+    font-size: 2.5em;
+    line-height: 1.3;
+}
+
+
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.menu{
+    position: relative;
+    width:30px;
+    height:25px;
+    float: right;
+    cursor: pointer;
+    background: #ffffff;
+    border-radius: 5px;
+    padding:5px;
+}
+.Logo{
+    display: none;
+}
+.mobileNav{
+    display: none;
+}
+.navMobileList{
+    display: block;
+}
+@media only screen and  (max-width:767px){
+    .menu{
+        position: relative;
+        width:30px;
+        height:25px;
+        float: right;
+        cursor: pointer;
+        background: #ffffff;
+        border-radius: 5px;
+        padding:5px;
+    }
+    .Logo{
+        float: left;
+        display: block;
+    }
+    .mobileNav{
+        width: 100%;
+        display: block;
+        float: left;
+        background: darkblue;
+        padding:10px;
+    }
+    .mobileNav a{
+        color:#ffffff;
+    }
+    .mobileNav a:hover{
+        color:#ffffff;
+    }
+    .navMobileList{
+        display: none;
+        width: 100%;
+        float: left;
+        transition: 3s ease-in;
+        border-radius: 0 0 5px 5px;
+    }
+    .navMobileList li{
+        width:100%;
+        border-top: 1px dotted #ffffff;
+    }
+    .navMobileList li:last-child{
+        display: none;
+    }
+}
