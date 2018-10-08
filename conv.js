@@ -3,17 +3,41 @@
 function fibonacci(num) {
   if (num <= 1) return 1;
 
-  return fibonacci(num - 1) + fibonacci(num - 2);
+  return "You have selected Fibonacci function. The result for given number "+num+" is: "+fibonacci(num - 1) + fibonacci(num - 2);
 }
 
 function factorial(num){
-  if (num <= 1){
-    return 1
-  }
-  else{
-    return (num * factorial(num - 1));
-  } 
+  {
+    var rval=1;
+    for (var i = 2; i <= num; i++)
+        rval = rval * i;
+    return "You have selected Factorial function. The result for given number "+num+" is: "+rval;
+}
+  // if (num <= 1){
+  //   let x =1
+  //   return "You have selected Factorial function.\n The result for given number "+num+" is: "+x
+  // }
+  // else{
+  //   return (num * factorial(num - 1));
+  // } 
   
+}
+
+function palindrome(num){
+    let a,b,temp=0;  
+    b=num;
+    while(num>0){
+      a=num%10;
+      num=parseInt(num/10);
+      temp=temp*10+a;
+    }
+    if(temp==b){
+    return "The given number "+b+" is a Palindrome number"
+    }
+    else
+    {
+    return("The given number "+b+" is Not a Palindrome number");
+    }
 }
 
 
@@ -26,7 +50,9 @@ function calculator(){
   else if(document.getElementById("valueFibbo").checked){
     radiSelect = "Fibanoci";
   }
-  
+  else if(document.getElementById("valuePal").checked){
+    radiSelect = "palin";
+  }
   const n = document.getElementById("num").value;
   switch(radiSelect){
 
@@ -36,7 +62,9 @@ function calculator(){
    case "Factorial" :
                     document.getElementById("result").innerHTML= factorial(n);
                     break;
-}
+    case "palin": document.getElementById("result").innerHTML = palindrome(n);
+                    break;
+  }
 }
 
 $('.menu').click(function(){

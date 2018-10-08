@@ -4,6 +4,7 @@ body {
     width: 100%;
     background-color: transparent!important;
     background-position: -69% 45%;
+    margin:0;
 }
 h2 {
     color:  yellow;
@@ -27,11 +28,11 @@ p {
 	color: darkblue;
 	font-size:20px;
 }
-.aside-header{
+/* .aside-header{
 	font-family: "Comic Sans MS";
 	font-style: italic;
 	color: #5b275e;
-}
+} */
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -67,7 +68,7 @@ img{
 }
 #wrapper{
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto 80px auto;
 }
 .div1{
 	float: left;
@@ -103,6 +104,8 @@ li a:hover {
 
 
 #section4{
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
 	 float: left;
     width: 33%;
 }
